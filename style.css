@@ -1,0 +1,44 @@
+:root {
+    --border_right: green;
+    --border_wrong: red;
+  }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    
+    h1 {
+      text-align: center;
+      margin: 4rem;
+    }
+   
+    
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 1rem;
+    }
+  
+  .guess_author {
+      font-size: var(--h3);
+  }
+    
+  .wrong_ans {
+      border-radius: .2rem;
+  border: solid .2rem var(--border_wrong);
+  
+  }
+  
+  .right_ans {
+      border-radius: .2rem;
+      border: solid .2rem var(--border_right);
+  }
+  
+  .percent_success {
+    font-size: 3rem;
+  }
